@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.learn.uitest">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".ApplicationConifg"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.CommityManager_"
+            android:label="社团管理">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.learn.uitest.Activity.FirstAnnoActivity_"/>
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.MainActivity_"/>
+        <activity android:name=".Activity.FirstAnnoActivity_">
+        </activity>
+        <activity android:name=".Activity.RegistCommityActivity_">
+        </activity>
+        <activity
+            android:name=".Activity.CommityNoteManage_"
+            android:label="公告管理">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.learn.uitest.Activity.CommityManager_"/>
+        </activity>
+        <activity
+            android:name=".Activity.CommityInfoManage_"
+            android:label="社团信息管理 ">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.learn.uitest.Activity.CommityManager_"/>
+        </activity>
+        <activity
+            android:name=".Activity.CommityMemManage_"
+            android:label="社团成员">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.learn.uitest.Activity.CommityManager_"/>
+        </activity>
+        <activity android:name=".Activity.CommityMemManage_Detail_"
+            android:label="成员详细信息">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.learn.uitest.Activity.CommityMemManage_"/>
+        </activity>
+    </application>
+
+</manifest>

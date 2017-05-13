@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">UI测试</string>
+    <string name="Complete">成功</string>
+    <string name="Error">出错</string>
+    <string name="Upload">上传</string>
+    <string name="regist_welcome">注册社团</string>
+    <string name="orginal_textsize">15dp</string>
+    <string name="useable">可用</string>
+    <string name="isCNUseable">检查社团名</string>
+    <string name="prompt_email">邮箱</string>
+    <string name="prompt_password">密码</string>
+    <string name="Connection">链接</string>
+</resources>

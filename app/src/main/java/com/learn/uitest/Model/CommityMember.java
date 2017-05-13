@@ -1,0 +1,103 @@
+package com.learn.uitest.Model;
+
+
+import org.joda.time.DateTime;
+
+import java.sql.Timestamp;
+
+/**
+ * 社团人员列表与权限实体（用的view中最大的字段数量作为内部的成员变量，实际中按需使用）
+ * Created by uryuo on 17/5/1.
+ */
+
+public class CommityMember {
+    private String CMid;
+    private String Cid;
+    private String UUuid;
+    private DateTime UJoinTime;
+    private int Utype = 0;
+    //存view 里面的Type的名字 给客户端方便
+    private String UTypeName;
+    private String UNackName;
+    private String CName;
+
+    public String getCName() {
+        return CName;
+    }
+
+    public void setCName(String CName) {
+        this.CName = CName;
+    }
+
+    public String getUNackName() {
+        return UNackName;
+    }
+
+    public void setUNackName(String UNackName) {
+        this.UNackName = UNackName;
+    }
+
+    public String getUTypeName() {
+        return UTypeName;
+    }
+
+    public void setUTypeName(String UTypeName) {
+        this.UTypeName = UTypeName;
+    }
+
+    public String getCMid() {
+        return CMid;
+    }
+
+    public void setCMid(String CMid) {
+        this.CMid = CMid;
+    }
+
+    public String getCid() {
+        return Cid;
+    }
+
+    public void setCid(String cid) {
+        Cid = cid;
+    }
+
+    public String getUUuid() {
+        return UUuid;
+    }
+
+    public void setUUuid(String UUuid) {
+        this.UUuid = UUuid;
+    }
+
+    public DateTime getUJoinTime() {
+        return UJoinTime;
+    }
+
+    public void setUJoinTime(DateTime UJoinTime) {
+        this.UJoinTime = UJoinTime;
+    }
+
+    public int getUtype() {
+        return Utype;
+    }
+
+    public void setUtype(int utype) {
+        Utype = utype;
+    }
+
+    public CommityMember(CommityMember old){
+        super();
+        this.CMid = old.CMid;
+        this.Cid = old.Cid;
+        this.UUuid = old.UUuid;
+        if (old.UJoinTime!=null)
+        this.UJoinTime = new DateTime(old.UJoinTime.toString());
+        this.Utype= old.Utype;
+        this.UTypeName = old.UTypeName;
+        this.UNackName = old.UNackName;
+        this.CName = old.CName;
+    }
+
+    public CommityMember() {
+    }
+}

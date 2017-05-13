@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+    >
+
+    <EditText
+        android:id="@+id/myInput"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/myTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/myInput"
+        android:layout_alignParentStart="true"/>
+
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/login"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#1E88E5"
+        android:text="发布"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/myTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="35dp"/>
+
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/jump"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#1E88E5"
+        android:text="跳转"
+        android:layout_marginStart="59dp"
+        android:layout_alignBaseline="@+id/login"
+        android:layout_alignBottom="@+id/login"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>

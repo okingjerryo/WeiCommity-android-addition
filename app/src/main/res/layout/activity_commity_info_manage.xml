@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_commity_info_manage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.learn.uitest.Activity.CommityInfoManage"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:baselineAligned="false"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="416dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_CommityHImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_launcher"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:stretchColumns="1"
+                >
+                <TableRow>
+
+                    <TextView
+                        android:text="社团名："
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_column="0"/>
+
+                    <EditText
+                        android:id="@+id/CMI_et_CName"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_column="1"
+                        android:enabled="false"
+                        android:layout_marginBottom="5dp"
+                        />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="创建时间："
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+
+                        android:layout_column="0"/>
+
+                    <EditText
+                        android:id="@+id/CMI_et_CCreatTime"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_column="1"
+                        android:enabled="false"
+                        />
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:text="社团标签："
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_column="0"/>
+
+                    <EditText
+                        android:id="@+id/CMI_et_CTag"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_column="1"
+                        android:enabled="false"
+                        />
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:text="社团人数："
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_column="0"/>
+
+                    <EditText
+                        android:id="@+id/CMI_et_CMeMCount"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_column="1"
+                        android:enabled="false"
+                        />
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:text="是否招新："
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_column="0"/>
+                    <CheckBox
+                        android:id="@+id/CMI_isNewIn"
+                        android:enabled="false"
+                        android:layout_column="1"/>
+
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:text="社团简介："
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_column="0"/>
+
+                    <EditText
+                        android:id="@+id/CMI_et_CIntroduce"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_column="1"
+                        android:minLines="8"
+                        android:ems="12"
+                        android:enabled="false"
+                        />
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:text="招新需求："
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_column="0"/>
+
+                    <EditText
+                        android:id="@+id/CMI_et_CNewDemand"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_column="1"
+                        android:minLines="8"
+                        android:ems="12"
+                        android:enabled="false"
+                        />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp">
+
+
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/CMI_btn_editable"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="#ee5dabef"
+            android:text="编辑"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="28dp"
+            android:layout_below="@+id/backgroud"
+            android:layout_alignParentEnd="true"/>
+
+        <com.dd.CircularProgressButton
+            android:id="@+id/CMI_btn_update"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            app:cpb_cornerRadius="7dp"
+            android:textSize="18sp"
+            app:cpb_textComplete="成功"
+            app:cpb_textError="失败"
+            android:layout_alignBottom="@id/CMI_btn_editable"
+            app:cpb_textIdle="@string/Upload" />
+
+
+    </RelativeLayout>
+</LinearLayout>
