@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_music_play"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.learn.uitest.Activity.MusicPlayActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="485px"
+        android:layout_height="70px"
+        android:text="当前歌曲："/>
+
+        <TextView
+            android:layout_width="200px"
+            android:layout_height="70px"
+            android:text="当前工种"/>
+
+    </LinearLayout>
+    <android.opengl.GLSurfaceView
+        android:id="@+id/gl_surface"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/timeList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00.000/00:00.000"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15px">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停止"
+            android:layout_marginLeft="50px"
+            android:id="@+id/seek"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前点评论"
+            android:layout_marginLeft="40px"
+            android:id="@+id/next"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:text="开始/暂停"
+            android:id="@+id/play"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.github.ksoichiro.android.observablescrollview.ObservableListView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/CMMpeople_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

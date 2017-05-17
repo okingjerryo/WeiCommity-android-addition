@@ -38,7 +38,12 @@ dependencies {
     compile 'com.alibaba:fastjson:1.1.45.android'
     //Joda Time
     compile group: 'joda-time', name: 'joda-time', version: '2.9.9'
+    //wave
+    compile 'com.yalantis:eqwaves:1.0.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
 
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
     //Ui
     //Material Design Android Library
     compile 'com.github.navasmdc:MaterialDesign:1.5@aar'

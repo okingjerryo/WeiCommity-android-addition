@@ -3,6 +3,7 @@
           package="com.learn.uitest">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 
     <application
         android:name=".ApplicationConifg"
@@ -12,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Activity.CommityManager_"
+            android:name=".Activity.MusicPlayActivity_"
             android:label="社团管理">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -50,12 +51,19 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.learn.uitest.Activity.CommityManager_"/>
         </activity>
-        <activity android:name=".Activity.CommityMemManage_Detail_"
+        <activity
+            android:name=".Activity.CommityMemManage_Detail_"
             android:label="成员详细信息">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.learn.uitest.Activity.CommityMemManage_"/>
         </activity>
+        <activity android:name=".Activity.CommityManager_">
+        </activity>
+        <activity android:name=".Activity.MusicDemo">
+        </activity>
+        <service android:name=".Service.PlayService_">
+        </service>
     </application>
 
 </manifest>
